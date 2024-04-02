@@ -1,7 +1,7 @@
 // "use strict";
 // Exercise 1:
 const myObject = {
-  value: Number(prompt("Mời nhập vào một cạnh hình vuông")),
+  value: Number(prompt("Nhập vào một cạnh hình vuông")),
 };
 const chuVi = function () {
   return myObject.value * 4;
@@ -13,7 +13,7 @@ console.log(chuVi(), dienTich());
 
 // Exercise 2:
 const myObject = {
-  value: Number(prompt("Mời nhập bán kính: ")),
+  value: Number(prompt("Nhập bán kính: ")),
 };
 const chuVi = function () {
   return myObject.value * 2 * 3.14;
@@ -25,8 +25,8 @@ console.log(chuVi().toFixed(2), dienTich().toFixed(2));
 
 // Exercise 3:
 const myObject = {
-  valueHeight: Number(prompt("Mời nhập chiều dài")),
-  valueWidth: Number(prompt("Mời nhập chiều rộng")),
+  valueHeight: Number(prompt("Nhập chiều dài")),
+  valueWidth: Number(prompt("Nhập chiều rộng")),
 };
 const chuVi = function () {
   return (myObject.valueHeight + myObject.valueWidth) * 2;
@@ -38,8 +38,8 @@ console.log(chuVi(), dienTich());
 
 // Exercise 4:
 const myObject = {
-  value1: Number(prompt("Mời nhập số thứ nhất")),
-  value2: Number(prompt("Mời nhập số thứ hai")),
+  value1: Number(prompt("Nhập số thứ nhất")),
+  value2: Number(prompt("Nhập số thứ hai")),
 };
 const tong = function () {
   return myObject.value1 + myObject.value2;
