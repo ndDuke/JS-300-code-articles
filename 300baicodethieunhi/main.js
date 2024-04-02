@@ -1,5 +1,5 @@
 // "use strict";
-// // Bài 1:
+// Exercise 1:
 const myObject = {
   value: Number(prompt("Mời nhập vào một cạnh hình vuông")),
 };
@@ -11,7 +11,7 @@ const dienTich = function () {
 };
 console.log(chuVi(), dienTich());
 
-// // Bài 2:
+// Exercise 2:
 const myObject = {
   value: Number(prompt("Mời nhập bán kính: ")),
 };
@@ -23,7 +23,7 @@ const dienTich = function () {
 };
 console.log(chuVi().toFixed(2), dienTich().toFixed(2));
 
-// // Bài 3:
+// Exercise 3:
 const myObject = {
   valueHeight: Number(prompt("Mời nhập chiều dài")),
   valueWidth: Number(prompt("Mời nhập chiều rộng")),
@@ -36,7 +36,7 @@ const dienTich = function () {
 };
 console.log(chuVi(), dienTich());
 
-// // Bài 4:
+// Exercise 4:
 const myObject = {
   value1: Number(prompt("Mời nhập số thứ nhất")),
   value2: Number(prompt("Mời nhập số thứ hai")),
@@ -49,7 +49,7 @@ const tich = function () {
 };
 console.log(tong(), tich());
 
-// // Bài 5:
+// Exercise 5:
 const myObject = {
   value1: Number(prompt("Nhập số thứ 1:")),
   value2: Number(prompt("Nhập số thứ 2:")),
@@ -60,7 +60,7 @@ const tbc = function () {
 };
 console.log(tbc().toFixed(1));
 
-// // Bài 6:
+// Exercise 6:
 const myObject = {
   value1: Number(prompt("Nhập cạnh thứ 1:")),
   value2: Number(prompt("Nhập cạnh thứ 1:")),
@@ -77,7 +77,7 @@ const dienTich = function () {
 };
 console.log(chuVi().toFixed(1), dienTich().toFixed(3));
 
-// // Bài 7:
+// Exercise 7:
 const myObject = {
   chieuCao: Number(prompt("Nhập chiều cao: ")),
   canhDay: Number(prompt("Nhập cạnh đáy: ")),
@@ -87,7 +87,7 @@ const dienTich = function () {
 };
 console.log(dienTich().toFixed(2));
 
-// // Bài 8:
+// Exercise 8:
 const myObject = {
   canh1: Number(prompt("Nhập vào cạnh thứ 1: ")),
   canh2: Number(prompt("Nhập vào cạnh thứ 2: ")),
@@ -112,7 +112,7 @@ const banKinh = function () {
 };
 console.log(banKinh().toFixed(3));
 
-// // Bài 9:
+// Exercise 9:
 const myObject = {
   toan: Number(prompt() * 2),
   van: Number(prompt() * 2),
@@ -123,7 +123,7 @@ const tbc = function () {
 };
 console.log(tbc().toFixed(1));
 
-// // Bài 10:
+Exercise 10:
 const myObject = {
   soTao: Number(prompt()),
   soHocSinh: Number(prompt()),
@@ -136,7 +136,7 @@ const soTaoDu = function () {
 };
 console.log(soTaoMoiHS(), soTaoDu());
 
-// // Bài 11:
+// Exercise 11:
 const myObject = {
   secondsInput: Number(prompt()),
 };
@@ -151,13 +151,13 @@ const seconds = function () {
 };
 console.log(`${hours()}:${minutes()}:${seconds()}`);
 
-// // Bài 12:
+// Exercise 12:
 const myObject = {
   value: prompt(),
 };
 console.log(myObject.value.slice(0, 2), myObject.value.slice(1, 3));
 
-// // Bài 13:
+// Exercise 13:
 const c = [];
 for (let i = 1; i <= 3; i++) {
   c.push(Number(prompt()));
