@@ -169,3 +169,148 @@ for (let i = 0; i < c.length; i++) {
   }
 }
 console.log(max);
+
+// Exercise 14:
+const myObject = {
+  age: Number(prompt()),
+};
+if (myObject.age > 0 && myObject.age < 11) {
+  console.log("Thieu nhi");
+} else if (myObject.age > 11 && myObject.age <= 25) {
+  console.log("Thieu nien");
+} else if (myObject.age > 25 && myObject.age <= 50) {
+  console.log("Trung nien");
+} else {
+  console.log("Lao nien");
+}
+
+// Exercise 15:
+const myObject = {
+  a: Number(prompt()),
+  b: Number(prompt()),
+  c: Number(prompt()),
+};
+const a = myObject.a;
+const b = myObject.b;
+const c = myObject.c;
+let chuVi;
+let dienTich;
+if (a + b > c && a + c > b && b + c > a) {
+  console.log("Day la 3 canh cua mot tam giac");
+  chuVi = a + b + c;
+  p = chuVi / 2;
+  dienTich = Math.sqrt(p * (p - a) * (p - b) * (p - c));
+  console.log(chuVi.toFixed(2), dienTich.toFixed(1));
+} else {
+  console.log("Day khong phai la 3 canh cua mot tam giac");
+}
+
+// Exercise 16:
+const myObject = {
+  tbhk1: Number(prompt()),
+  tbhk2: Number(prompt()),
+};
+const tbcn = (myObject.tbhk1 + myObject.tbhk2 * 2) / 3;
+console.log(tbcn.toFixed(1));
+if (tbcn >= 8) console.log("Gioi");
+else if (tbcn < 8 && tbcn >= 6.5) console.log("Kha");
+else if (tbcn < 6.5 && tbcn >= 5) console.log("Kha");
+else if (tbcn < 5 && tbcn >= 3.5) console.log("Kha");
+else console.log("Yeu");
+
+// Exercise 17:
+const month = Number(prompt());
+switch (month) {
+  case 2:
+  case 3:
+  case 4:
+    console.log("Mua Xuan");
+    break;
+  case 5:
+  case 6:
+  case 7:
+    console.log("Mua Ha");
+    break;
+  case 8:
+  case 9:
+  case 10:
+    console.log("Mua Thu");
+    break;
+  case 11:
+  case 12:
+  case 1:
+    console.log("Mua Dong");
+    break;
+  default:
+    console.log("Khong hop le");
+}
+
+// Exercise 18:
+const month = Number(prompt());
+const year = Number(prompt());
+if (
+  month === 1 ||
+  month === 3 ||
+  month === 5 ||
+  month === 7 ||
+  month === 8 ||
+  month === 10 ||
+  month === 12
+) {
+  console.log(31);
+} else if (month === 4 || month === 6 || month === 9 || month === 11) {
+  console.log(30);
+} else if (month === 2) {
+  if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log(29);
+  } else {
+    console.log(28);
+  }
+} else {
+  console.log("Khong hop le");
+}
+
+// Exercise 19:
+const number = prompt();
+if (number.length === 5) {
+  const digit1 = parseInt(number.charAt(0));
+  const digit2 = parseInt(number.charAt(1));
+  const digit3 = parseInt(number.charAt(2));
+  const digit4 = parseInt(number.charAt(3));
+  const digit5 = parseInt(number.charAt(4));
+
+  const sum = digit1 + digit2 + digit3 + digit4 + digit5;
+  if (sum < 10 && sum > 0) {
+    if (sum === 9) {
+      console.log(sum);
+      console.log("may man");
+    } else {
+      console.log(sum);
+      console.log("chua may man");
+    }
+  } else {
+    const soNut = sum % 10;
+    if (soNut === 9) {
+      console.log(soNut);
+      console.log("may man");
+    } else {
+      console.log(soNut);
+      console.log("chua may man");
+    }
+  }
+} else {
+  console.log("Khong hop le");
+}
+
+// Exercise 20:
+const money = Number(prompt());
+const money_5000 = function () {
+  return Math.floor(money / 5000);
+};
+const money_2000 = function () {
+  return Math.floor((money - money_5000() * 5000) / 2000);
+};
+const money_1000 = function () {
+  return (money - money_5000() * 5000 - money_2000() * 2000) / 1000;
+};
+console.log(money_5000(), money_2000(), money_1000());
