@@ -3,6 +3,4 @@
 
 Using prompt() for input value
 
-
-
 -Duke-
